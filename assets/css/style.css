@@ -1,0 +1,412 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Italic.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-LightItalic.woff2') format('woff2'),
+        url('../fonts/Ubuntu-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Ubuntu-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Bold.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('..//fonts/Ubuntu-Light.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Ubuntu-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Medium.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+html {
+  overflow-x: hidden;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+	overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ /**/
+body {
+	font-family: 'Ubuntu';
+}
+
+.container {
+	padding: 0 155px;
+}
+
+header {
+	width: 100%;
+}
+header h1 {
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+.intro-form {
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+}
+
+.intro-form p {
+	line-height: 1.5;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.title {
+	color:#fff;
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 32px;
+}
+
+.title span {
+	color: #faa633;
+}
+
+.container-form {
+	background: #00245d;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.container-flex {
+	margin-top: 60px;
+	display: flex;
+	align-items: center;
+}
+
+.contaier-form .form,
+.container-form .image-bg {
+	width: 50%;
+}
+.image-bg img {
+  width: 100%;
+  display: block;
+}
+.c-form h3 {
+	color: #fff;
+	margin-bottom: 25px;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.form {
+	background: #fff;
+	max-width: 600px;
+	width: 100%;
+	padding: 30px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.form label {
+	/* width: 100%;
+	max-width: 250px; */
+	display: inline-block;
+	margin-bottom: 15px;
+	width: calc(50% - 8px);
+}
+label:first-child {
+  margin-right: 12px;
+}
+
+.form label span {
+	font-weight: bold;
+	margin-bottom: 15px;
+	display: block;
+}
+
+form * {
+	box-sizing: border-box;
+}
+
+form input:not([type="checkbox"]):not([type="email"]) {
+	height: 50px;
+	width: 100%;
+}
+
+form select {
+	display: inline-block;
+	width: 100%;
+	max-width: 250px;
+}
+
+label[for="email"] {
+	width: 100%;
+	max-width: 100%;
+}
+
+form input[type="email"] {
+	width: 100%;
+	height: 50px;
+	display: block;
+}
+
+form input[type="checkbox"] {
+	display: inline-block;
+}
+
+form input[type="submit"] {
+	background: #61ac31;
+	border-radius: 10px;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  color: #9B9B9B;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.checkbox-div {
+  display: flex;
+  align-items: flex-start;
+	margin-bottom: 15px;
+}
+
+.checkbox-div span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.86);
+}
+
+footer {
+	padding-top: 50px !important;
+	padding-bottom: 50px !important;
+}
+
+.selection > span.error{
+	border: solid 2px red;
+}
+
+
+span.select2-selection.select2-selection--single {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.select2-selection__rendered {
+  margin-bottom: 0 !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #9B9B9B !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 10px !important;
+}
+
+footer.container p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+footer.container a {
+	color: #000;
+}
+
+.thanks-container {
+	background: #fff;
+	max-width: 600px;
+	width: 100%;
+	padding: 30px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.thanks-container h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.thanks-container p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+}
+.d-none {
+	display: none;
+}
+
+.error:after {
+  display: block;
+  content: '*campo obbligatorio';
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  bottom: -33px;
+}
+
+.email_input .error:after {
+  bottom: -22px;
+}
+.checkbox-div.privacy_checkbox .error:after {
+  bottom: -21px;
+  left: 17px;
+}
+.age_select .error:after {
+	bottom: -6px;
+}
+.name_input,
+.privacy_checkbox,
+.email_input,
+.age_select {
+	position: relative;
+}
+input.error {
+  border:solid 2px red;
+  border-radius: 5px;
+}
+span.select2-selection.select2-selection--single.error {
+  border: 2px solid red;
+}
+span.select2-selection.select2-selection--single.error:after {
+	content: none;
+}
+@media (max-width:991px){
+	.image-bg {
+		order: 2;
+	}
+	.container-flex {
+		flex-direction: column;
+	}
+}
+@media(max-width:767px) {
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	/* .container-flex {
+		display: block;
+	} */
+	.form label {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+	}
+	span.select2.select2-container.select2-container--default {
+    width: 100% !important;
+	}
+	.contaier-form .form, .container-form .image-bg {
+    width: 100%;
+	}
+}
